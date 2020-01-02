@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta name="keywords" content="calculator"/>
+  <meta name="author" content="zhangzien" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Sublime Text 3" />
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js" type="text/javascript"></script>
+  <link rel="shortcut icon" type="image/jpg" href="http://www.easyicon.net/api/resizeApi.php?id=1175525&size=64">
+</head>
+
+<body>
+   <h1>简单计算器</h1>
+   <div id="content">
+      <input id="mode1" type="button" onclick="changeMode(this.id)" value="简单">
+      <input id="mode2" type="button" onclick="changeMode(this.id)" value="高级">
+
+      <div id="calculator">
+         <div id="expression">
+            <div id="history"><p></p></div>
+            <input id="exp" type="text" placeholder="0" autofocus="autofocus">
+         </div>
+         <div id="advanced">
+            <input type="button" value="log(x)" title="以e为底的对数">
+            <input type="button" value="sqrt(x)" title="x的平方根">
+            <input type="button" value="pow(x,y)" title="x的y次幂">
+            <input type="button" value="abs(x)" title="x的绝对值">
+            <input type="button" value="ceil(x)" title="向上取整">
+            <input type="button" value="log10(x)" title="以10为底的对数">
+            <input type="button" value="cbrt(x)" title="x的立方根">
+            <input type="button" value="exp(x)" title="e的x次幂">
+            <input type="button" value="round(x)" title="四舍五入">
+            <input type="button" value="floor(x)" title="向下取整">
+         </div>
+
+         <div id="simple">
+            <input type="button" value="(">
+            <input type="button" value=")">
+            <input type="button" value="%" title="求余数">
+            <input type="button" value="/" title="除法">
+            <input type="button" value="↑" title="上一条表达式">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="*" title="乘法">
+            <input type="button" value="←" title="删除最后一个字符">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" value="-" title="减法">
+            <input id="CE" type="button" value="CE" title="清除表达式">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="+" title="加法">
+            <input id="calc" type="button" value="=" title="计算结果">
+            <input id="zero" type="button" value="0">
+            <input type="button" value="00">
+            <input type="button" value=".">
+         </div>
+      </div>
+   </div>
+</body>
+</html>
